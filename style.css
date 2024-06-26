@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yusei Magic', sans-serif;
+    color: red;
+
+    background-image:  url('https://img.wallpapersafari.com/desktop/1680/1050/2/5/1vtC96.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo img{
+    width: 5em;
+    padding-top: 0;
+    border-radius: 50%;
+    background-color: red;
+    margin: 1em;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 40%;
+    padding: 0;
+}
+
+
+header nav ul li{
+    margin-left: 40px;
+    font-size: 2em;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: red;
+    transition: text-shadow .3s;
+}
+
+header nav ul li a:hover{
+    text-shadow: 0 0 10px red;
+}
+
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 100px;
+    line-height: 150px;
+    font-family: 'Potta One', cursive;
+    margin-top: 100px;
+}
+
+.intro p{
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+.first-section{
+    margin: 0;
+    padding: 0;
+    font-family: 'Potta One', cursive;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.card:hover{
+    z-index: 1000px;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+
+.card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    background-color: #000;
+}
+
+.card:hover .imgbox{
+    transform: rotateY(-135deg);
+}
+
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.card .details p{
+    color: #000;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f359881d-6bb2-4391-aba6-779f7084edd4/da5ybsh-3ab4bdd7-f3f1-4ef4-8c47-22dcb9b894a6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjM1OTg4MWQtNmJiMi00MzkxLWFiYTYtNzc5ZjcwODRlZGQ0XC9kYTV5YnNoLTNhYjRiZGQ3LWYzZjEtNGVmNC04YzQ3LTIyZGNiOWI4OTRhNi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.QNajvtgCeBg-iAZISxtgVMoTvG2M56_ATN6QkNq0ggU');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 30%;
+    padding: 0;
+    padding-top: 5%;
+}
+
+footer nav ul li{
+    margin-left: 40%;
+    font-size: 2em;
+}
+
+footer nav ul li a img{
+    border-radius: 50%;
+    border: 3px solid red;
+}
+
+footer nav ul li a img:hover{
+    transform: scale(1.1);
+}
